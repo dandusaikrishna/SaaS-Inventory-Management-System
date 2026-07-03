@@ -219,6 +219,11 @@ All protected endpoints require a valid session cookie.
 
 ---
 
+## API Reference
+
+For the full API reference, see [API_GUIDE.md](./API_GUIDE.md).
+
+
 ## Testing instructions
 
 ### Manual end-to-end test
