@@ -76,10 +76,13 @@ Create a `.env` file in the project root (see `.env.example`):
 | Variable | Description | Example |
 |----------|-------------|---------|
 | `DATABASE_URL` | PostgreSQL connection string | `postgresql://stockflow:stockflow@localhost:5433/stockflow` |
+| `PGSSLMODE` | SSL validation mode for PostgreSQL | `disable` or `no-verify` when using self-signed certs |
 | `JWT_SECRET` | Secret for signing session tokens (use a long random string in production) | `your-secret-here` |
 | `NODE_ENV` | Environment | `development` |
 
 **Important:** Change `JWT_SECRET` before deploying to production.
+
+> If your database uses a self-signed TLS certificate, set `PGSSLMODE=no-verify` in `.env`.
 
 ---
 
